@@ -3,7 +3,7 @@ Project - Announcement
 Author - Shandeep - https://www.linkedin.com/in/shandeepsrinivas/
 */
 
-function aobserverForMutation(selector) {
+function announcementObserverForMutation(selector) {
     return new Promise(resolve => {
         if (document.querySelector(selector)) {
             return resolve(document.querySelector(selector));
@@ -23,7 +23,7 @@ function aobserverForMutation(selector) {
     });
 }
 
-function getCookie(name) {
+function announcementGetCookie(name) {
   if (!document.cookie) {
     return null;
   }
@@ -38,7 +38,7 @@ function getCookie(name) {
   return xsrfCookies[0].split(name+'=')[1];
 }
 
-async function getPluginId(pName, xxsrfToken) {
+async function announcementGetPluginId(pName, xxsrfToken) {
 	var base_URL = window.location.origin;
 	var plugins = new XMLHttpRequest();
 	plugins.withCredentials = true;
@@ -59,12 +59,12 @@ async function getPluginId(pName, xxsrfToken) {
 	return prID;
 }
 
-async function getPluginSettings(pluginName) {
+async function announcementGetPluginSettings(pluginName) {
 	var base_URL = window.location.origin;
-	var csrfToken = getCookie('CSRF-TOKEN');
+	var csrfToken = announcementGetCookie('CSRF-TOKEN');
 	var settgs = null;
 	if(csrfToken) {
-		var pluginID = await getPluginId(pluginName, csrfToken);
+		var pluginID = await announcementGetPluginId(pluginName, csrfToken);
 		var pluginSetting = new XMLHttpRequest();
 		pluginSetting.withCredentials = true;
 		
@@ -83,10 +83,8 @@ async function getPluginSettings(pluginName) {
 	}
 	return settgs;
 }
-async function xcec() {
-	var settings = await getPluginSettings('announcement');
-	console.log("settings - " + settings);
-
+async function announcementExec() {
+	var settings = await announcementGetPluginSettings('announcement');
 	var toAnnounce = null;
 	var cssContent = null;
 	var showInHome = null;
@@ -100,10 +98,10 @@ async function xcec() {
 			showInHome = value.value;
 	}
 	if(document.URL.includes("home.jsf") && showInHome === 'true') {
-		aobserverForMutation('.padder-v').then((elm) => {
+		announcementObserverForMutation('.padder-v').then((elm) => {
     		jQuery('.padder-v').before("<marquee style='" + cssContent + "'>" + toAnnounce + "</marquee>");
 		});
 	}
 }
 
-xcec();
+announcementExec();
