@@ -1,7 +1,7 @@
 # Announcement
 
 ### Plugin Name: - Announcement
-### Plugin Version: - 1.0 
+### Plugin Version: - 1.0.1
 ### Supported version: - Identity IQ 8.0 or above 
 ### Primary function: - This plugin can be used to display Scrolling Text (marquee) on top of the Home Page.
 
