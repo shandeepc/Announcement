@@ -1,10 +1,10 @@
 # Announcement
 
 ### Plugin Name: - Announcement
-### Plugin Version: - 2.0
+### Plugin Version: - 3.0
 ### Supported version: - Identity IQ 8.0 or above 
 ### Supported version: - Any Chromium or Firefox browser (Internet Explorer not supported)
-### Primary function: - This plugin can be used to display Scrolling Text (marquee) on top of the Home Page.
+### Primary function: - This plugin can be used to display Scrolling Text on top of the Home Page.
 
 ## Installation
 * Simply drag and drop the plugin to install it
@@ -16,6 +16,10 @@
 *	Click on ‘configure’ button on the plugin to open the Plugin Configuration
 *	Announcement – Text that want to be displayed in the Home Page, It also supports HTML tags
 *	CSS Style – CSS Style that has to be applied to the text, like size, color e.t.c.
+*	Show in Home Page – Check to display the announcement home page
+*	Animation – Choose one from six different types of animation.
+*	Fade In And Out – Apply a fade in fade out animation in addition to the above animation.
+*	Pause On Hover – When mouse is hovered on the announcement the above animations are paused, So its easy to read or click any links
 *	Click Save button at the bottom to save the configuration.
 
 ![image](https://github.com/shandeepc/Announcement/assets/42472392/e71bbb48-c3c6-492a-85bf-207cec356c1e)
