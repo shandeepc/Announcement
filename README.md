@@ -10,8 +10,8 @@
 
 ## New In Version 3.0
 1. Added 'Animation' - 6 different animations to choose from also 'No Animation' makes the announcement a static text.
-2. Added 'Fade In And Out' - An additional animation to the above choosen one.
-3. Added 'Pause On Hover' - Pauses the chosen 'Animation' & 'Fade In And Out' animation(if choosen) on mouse hover, So its easy to read or click links.
+2. Added 'Fade In And Out' - An additional animation to the above chosen one.
+3. Added 'Pause On Hover' - Pauses the chosen 'Animation' & 'Fade In And Out' animation(if chosen) on mouse hover, So its easy to read or click links.
 4. Added IIQ Form based UI for Plugin Configuration.
 5. Removed the deprecated Marquee based scrolling with CSS transformation based animation. 
 
